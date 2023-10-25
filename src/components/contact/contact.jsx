@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import emailjs from 'emailjs-com';
-import './Contact.css';
+import './contact.css'
 
 const Contact = () => {
   const [name, setName] = useState('');

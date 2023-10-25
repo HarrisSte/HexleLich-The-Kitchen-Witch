@@ -3,14 +3,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import './header.css'
+
 function HeaderNav() {
   return (
-    <Navbar expand='lg' className='bg-body-tertiary'>
+    <Navbar expand='lg' className='nav-bar'>
       <Container>
         <Navbar.Brand href='#home'>HexleLich || The Kitchen Witch</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='me-auto'>
+        <Navbar.Collapse >
+          <Nav className='nav-links'>
             <Nav.Link href='/about'>The Story...</Nav.Link>
             <Nav.Link href='/recipes'>Recipes</Nav.Link>
             <Nav.Link href='/contact'>Contact</Nav.Link>
