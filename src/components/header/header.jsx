@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function BasicExample() {
+function HeaderNav() {
   return (
     <Navbar expand='lg' className='bg-body-tertiary'>
       <Container>
@@ -11,16 +11,19 @@ function BasicExample() {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
-            <Nav.Link href='#home'>The story</Nav.Link>
-            <Nav.Link href='#link'>Recipes</Nav.Link>
+            <Nav.Link href='/about'>The Story...</Nav.Link>
+            <Nav.Link href='/recipes'>Recipes</Nav.Link>
+            <Nav.Link href='/contact'>Contact</Nav.Link>
             <NavDropdown title='Social Media' id='basic-nav-dropdown'>
               <NavDropdown.Item href='https://www.youtube.com/@hexlelich'>
                 YouTube
               </NavDropdown.Item>
-              <NavDropdown.Item href='https://www.twitch.com/hexlelich'>Twitch</NavDropdown.Item>
-              <NavDropdown.Item href='https://www.twitter.com/hexlelich'>Twitter</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href='#action/3.4'>Contact</NavDropdown.Item>
+              <NavDropdown.Item href='https://www.twitch.com/hexlelich'>
+                Twitch
+              </NavDropdown.Item>
+              <NavDropdown.Item href='https://www.twitter.com/hexlelich'>
+                Twitter
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
@@ -29,4 +32,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default HeaderNav;
