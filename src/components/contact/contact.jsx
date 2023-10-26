@@ -39,11 +39,11 @@ const Contact = () => {
     <div>
       <Container>
         <Row>
-          <Col>
+          {/* <Col>
             <h2 className='contact-subtitle'>
               Please reach out should you have any questions or comments!
             </h2>
-          </Col>
+          </Col> */}
           <Col>
             <div className='contact-form'>
               <input
