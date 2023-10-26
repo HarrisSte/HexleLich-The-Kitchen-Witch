@@ -3,9 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/logo.png';
 
-import './header.css'
+import './header.css';
 
 function HeaderNav() {
   return (
@@ -13,11 +13,11 @@ function HeaderNav() {
       <Container>
         <div className='logo'>
           <a href='/'>
-            <img src={Logo} width={80} height={80} />
+            <img src={Logo} width={90} height={90} />
           </a>
         </div>
         <Navbar.Brand href='/about'>
-          HexleLich || The Kitchen Witch
+          HexleLich<br></br>The Kitchen Witch
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse>
