@@ -1,17 +1,25 @@
 img {
-    margin-right: 1rem;
+    margin-right: 2rem;
+}
+
+h2 {
+    margin-right: 4rem;
+    color: #3E2015;
 }
 
 .nav-bar {
     background-color: #f8f5f2;
     padding-left: 2rem;
+    color: #3E2015;
 }
 
-.nav-links {
+.nav-link a {
     font-family: 'Lato';
+    font-size: 1.2rem;
+    color: #3E2015;
+    
 }
 
-.nav-links:hover {
-    font-family: 'Lato';
-    color: green;
+.nav-dropdown a {
+    color: #3E2015;
 }

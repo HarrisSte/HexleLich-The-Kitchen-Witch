@@ -13,27 +13,29 @@ function HeaderNav() {
       <Container>
         <div className='logo'>
           <a href='/'>
-            <img src={Logo} width={90} height={90} />
+            <img src={Logo} width={120} height={120} />
           </a>
         </div>
         <Navbar.Brand href='/about'>
-          HexleLich<br></br>The Kitchen Witch
+          <h2>
+            HexleLich<br></br>The Kitchen Witch
+          </h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse>
-          <Nav className='nav-links'>
+          <Nav className='nav-link'>
             <Nav.Link href='/about'>The Story...</Nav.Link>
             <Nav.Link href='/recipes'>Recipes</Nav.Link>
             <Nav.Link href='/contact'>Contact</Nav.Link>
             <NavDropdown title='Social Media' id='basic-nav-dropdown'>
               <NavDropdown.Item href='https://www.youtube.com/@hexlelich'>
-                YouTube
+                <a>YouTube</a>
               </NavDropdown.Item>
               <NavDropdown.Item href='https://www.twitch.com/hexlelich'>
-                Twitch
+                <a>Twitch</a>
               </NavDropdown.Item>
               <NavDropdown.Item href='https://www.twitter.com/hexlelich'>
-                Twitter
+                <a>Twitter</a>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
