@@ -3,15 +3,24 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import Logo from '../../assets/logo.png'
+
 import './header.css'
 
 function HeaderNav() {
   return (
     <Navbar expand='lg' className='nav-bar'>
       <Container>
-        <Navbar.Brand href='#home'>HexleLich || The Kitchen Witch</Navbar.Brand>
+        <div className='logo'>
+          <a href='/'>
+            <img src={Logo} width={80} height={80} />
+          </a>
+        </div>
+        <Navbar.Brand href='/about'>
+          HexleLich || The Kitchen Witch
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse >
+        <Navbar.Collapse>
           <Nav className='nav-links'>
             <Nav.Link href='/about'>The Story...</Nav.Link>
             <Nav.Link href='/recipes'>Recipes</Nav.Link>
