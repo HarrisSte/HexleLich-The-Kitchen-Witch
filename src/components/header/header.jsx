@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -7,22 +8,37 @@ import './header.css';
 
 function Header() {
   const location = useLocation();
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 100;
+      setIsScrolled(scrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <Navbar expand='lg' className='nav-bar'>
-      <Container>
+    <Navbar expand='lg' className='header-outer nav-bar'>
+      <Container className='header-inner responsive wrapper'>
         <div className='logo'>
           <Link to='/'>
-            <img src={Logo} width={120} height={120} />
+            <img src={Logo} width={150} height={150} alt='Logo' />
           </Link>
         </div>
         <Navbar.Brand as={Link} to='/'>
-          HexleLich<br></br>
-          <p>The Kitchen Witch</p>
+          <h2 className={`kitchen-witch ${isScrolled ? 'hidden' : ''}`}>
+            The Kitchen Witch
+          </h2>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Nav className='ml-auto'>
+          <Nav className='header-navigation ml-auto'>
             <Nav.Link
               as={Link}
               to='/'
@@ -51,7 +67,12 @@ function Header() {
             >
               Contact
             </Nav.Link>
-            <NavDropdown title='Social Media' id='basic-nav-dropdown'>
+            <NavDropdown
+              title='Social Media'
+              show={showDropdown}
+              onMouseEnter={() => setShowDropdown(true)}
+              onMouseLeave={() => setShowDropdown(false)}
+            >
               <NavDropdown.Item href='https://www.youtube.com/@hexlelich'>
                 <a>YouTube</a>
               </NavDropdown.Item>

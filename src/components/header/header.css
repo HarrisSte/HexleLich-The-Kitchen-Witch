@@ -1,13 +1,12 @@
+:root {
+    --header-outer-height: 375px;
+    --header-inner-height: 215px;
+    --header-height-difference: calc(var(--header-outer-height) - var(--header-inner-height));
+    --header-bg: #f8f5f2;
+}
+
 .active {
-    font-weight: 700
-}
-
-.navbar {
-    background-color: #f8f5f2;
-}
-
-.logo img {
-    margin-right: 1.5rem
+    font-weight: 900
 }
 
 .navbar-brand {
@@ -20,22 +19,111 @@
     font-family: 'Lato', sans-serif
 }
 
-.nav-link {
-    font-family: "Lato", sans-serif;
-    font-size: 22px
+.logo img {
+    margin-right: 1.5rem;
+}
+
+.kitchen-witch {
+    transition: opacity 0.5s ease;
+}
+
+.kitchen-witch.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-outer {
+    z-index: 1000;
+    height: var(--header-outer-height);
+    position: sticky;
+    top: calc(var(--header-height-difference) * -1);
+    display: flex;
+    align-items: center;
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-inner {
+    height: var(--header-inner-height);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-inner.scrolled {
+    align-items: flex-start;
+}
+
+.header-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.header-navigation a {
+    font-size: 22px;
+    color: inherit;
+    position: relative;
+    font-family: 'Lato';
+}
+
+.header-navigation a:hover:after {
+    transform: scalex(1);
+}
+
+.header-navigation a:after {
+    transition: 0.25s ease;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: currentcolor;
+    transform: scalex(0);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
 }
 
 @media (max-width: 768px) {
+    .header-outer {
+        height: auto;
+        top: 0;
+    }
+
+    .header-inner {
+        height: auto;
+    }
+
+    .header-navigation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-navigation a {
+        margin-bottom: 10px;
+    }
+
     .logo img {
-        margin-right: 90px
+        margin-right: 0;
     }
 
     .navbar-brand {
-        font-size: 30px
+        font-size: 30px;
     }
 
     .nav-link {
-        font-size: 18px
+        font-size: 18px;
     }
-
 }

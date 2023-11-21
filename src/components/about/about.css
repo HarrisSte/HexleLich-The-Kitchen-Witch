@@ -1,0 +1,33 @@
+.about-info {
+    background-color: #f8f5f2;
+    border-image: linear-gradient(to right, #eacbd2, #dfaeb4, #dd9ac2, #b486ab, #82667f) 1;
+    border-style: solid;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 6rem;
+    padding: 1.5rem;
+}
+
+.profile-image {
+    border-radius: 67% 47% 77% 33% / 34% 79% 30% 70%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    padding-top: 5rem;
+    width: 425px
+}
+
+@media only screen and (max-width: 768px) {
+    .profile-image {
+        border-radius: 67% 47% 77% 33% / 34% 79% 30% 70%;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+        padding-top: 5rem;
+        width: 325px
+    }
+
+    .about-info {
+        margin: .5rem;
+    }
+}
