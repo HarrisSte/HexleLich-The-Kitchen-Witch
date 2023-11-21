@@ -53,7 +53,7 @@ function Header() {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to='/menu'
+              to='/recipes'
               className={location.pathname === '/recipes' ? 'active' : ''}
             >
               Recipes

@@ -1,7 +1,7 @@
-import '../footer/footer.css';
+import Image from 'react-bootstrap/Image';
 
-function Footer() {
-  return <footer></footer>;
+function FluidExample() {
+  return <Image src='src\assets\oops404.png' fluid />;
 }
 
-export default Footer;
+export default FluidExample;
