@@ -26,15 +26,13 @@ function Header() {
   return (
     <Navbar expand='lg' className='header-outer nav-bar'>
       <Container className='header-inner responsive wrapper'>
-        <div className='logo'>
+        <div className={`logo ${isScrolled ? 'hidden' : ''}`}>
           <Link to='/'>
-            <img src={Logo} width={150} height={150} alt='Logo' />
+            <img src={Logo} width={200} height={200} alt='Logo' />
           </Link>
         </div>
         <Navbar.Brand as={Link} to='/'>
-          <h2 className={`kitchen-witch ${isScrolled ? 'hidden' : ''}`}>
-            The Kitchen Witch
-          </h2>
+          <h2>The Kitchen Witch</h2>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>

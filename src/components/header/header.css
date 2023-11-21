@@ -1,33 +1,30 @@
 :root {
-    --header-outer-height: 375px;
-    --header-inner-height: 215px;
+    --header-outer-height: 400px;
+    --header-inner-height: 150px;
     --header-height-difference: calc(var(--header-outer-height) - var(--header-inner-height));
     --header-bg: #f8f5f2;
+}
+
+.navbar-brand h2 {
+    margin-top: .5rem;
+    font-family: 'Lato';
+    font-size: 48px;
+    padding-top: .5rem;
 }
 
 .active {
     font-weight: 900
 }
 
-.navbar-brand {
-    font-size: 40px;
-    font-family: "Lato", sans-serif
-}
-
-.navbar-brand p {
-    font-size: 19px;
-    font-family: 'Lato', sans-serif
-}
-
-.logo img {
-    margin-right: 1.5rem;
-}
-
-.kitchen-witch {
+.logo {
     transition: opacity 0.5s ease;
 }
 
-.kitchen-witch.hidden {
+.logo img {
+    margin-top: -5rem;
+}
+
+.logo.hidden {
     opacity: 0;
     height: 0;
     overflow: hidden;
@@ -61,14 +58,9 @@
     justify-content: space-between;
 }
 
-.header-inner.scrolled {
-    align-items: flex-start;
-}
-
 .header-navigation {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
 }
 
 .header-navigation a {
@@ -111,12 +103,16 @@
         text-align: center;
     }
 
+    .navbar-brand h2 {
+        font-size: 30px;
+    }
+
     .header-navigation a {
-        margin-bottom: 10px;
+        margin-bottom: 18px;
     }
 
     .logo img {
-        margin-right: 0;
+        margin-top: 0;
     }
 
     .navbar-brand {

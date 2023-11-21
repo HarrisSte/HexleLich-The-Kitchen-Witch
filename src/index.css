@@ -4,5 +4,7 @@ body {
   margin: 0;
   padding: 0;
   user-select: none;
-  background-image: url('./assets/oops404.png');
+  background-image: url('./assets/background.png');
+  background-size: contain;
+
 }
