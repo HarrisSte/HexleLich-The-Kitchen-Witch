@@ -1,32 +1,56 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link, useLocation } from 'react-router-dom';
 
 import Logo from '../../assets/logo.png';
 
 import './header.css';
 
-function HeaderNav() {
+function Header() {
+  const location = useLocation();
+
   return (
     <Navbar expand='lg' className='nav-bar'>
       <Container>
         <div className='logo'>
-          <a href='/'>
+          <Link to='/'>
             <img src={Logo} width={120} height={120} />
-          </a>
+          </Link>
         </div>
-        <Navbar.Brand href='/about'>
-          <h2>
-            HexleLich<br></br>The Kitchen Witch
-          </h2>
+        <Navbar.Brand as={Link} to='/'>
+          HexleLich<br></br>
+          <p>The Kitchen Witch</p>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Toggle />
         <Navbar.Collapse>
-          <Nav className='nav-link'>
-            <Nav.Link href='/about'>The Story...</Nav.Link>
-            <Nav.Link href='/recipes'>Recipes</Nav.Link>
-            <Nav.Link href='/contact'>Contact</Nav.Link>
+          <Nav className='ml-auto'>
+            <Nav.Link
+              as={Link}
+              to='/'
+              className={location.pathname === '/' ? 'active' : ''}
+            >
+              Welcome
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to='/about'
+              className={location.pathname === '/about' ? 'active' : ''}
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to='/menu'
+              className={location.pathname === '/recipes' ? 'active' : ''}
+            >
+              Recipes
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to='/contact'
+              className={location.pathname === '/contact' ? 'active' : ''}
+            >
+              Contact
+            </Nav.Link>
             <NavDropdown title='Social Media' id='basic-nav-dropdown'>
               <NavDropdown.Item href='https://www.youtube.com/@hexlelich'>
                 <a>YouTube</a>
@@ -45,4 +69,4 @@ function HeaderNav() {
   );
 }
 
-export default HeaderNav;
+export default Header;

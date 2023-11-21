@@ -1,25 +1,41 @@
-img {
-    margin-right: 2rem;
+.active {
+    font-weight: 700
 }
 
-h2 {
-    margin-right: 4rem;
-    color: #3E2015;
-}
-
-.nav-bar {
+.navbar {
     background-color: #f8f5f2;
-    padding-left: 2rem;
-    color: #3E2015;
 }
 
-.nav-link a {
-    font-family: 'Lato';
-    font-size: 1.2rem;
-    color: #3E2015;
-    
+.logo img {
+    margin-right: 1.5rem
 }
 
-.nav-dropdown a {
-    color: #3E2015;
+.navbar-brand {
+    font-size: 40px;
+    font-family: "Lato", sans-serif
+}
+
+.navbar-brand p {
+    font-size: 19px;
+    font-family: 'Lato', sans-serif
+}
+
+.nav-link {
+    font-family: "Lato", sans-serif;
+    font-size: 22px
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        margin-right: 90px
+    }
+
+    .navbar-brand {
+        font-size: 30px
+    }
+
+    .nav-link {
+        font-size: 18px
+    }
+
 }
