@@ -1,42 +1,48 @@
 // import Image from 'react-bootstrap/Image';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import foodImg from '../../assets/main-banner.jpg';
+import foodImg1 from '../../assets/foodImg1.jpg';
+import foodImg2 from '../../assets/foodImg2.jpg';
+import foodImg3 from '../../assets/foodImg3.jpg';
+import foodImg4 from '../../assets/foodImg4.jpg';
+import foodImg5 from '../../assets/foodImg5.jpg';
+import foodImg6 from '../../assets/foodImg6.jpg';
+
 import './gallery.css';
 
 const foodPics = [
   {
-    img: foodImg,
+    img: foodImg1,
     title: 'Image One',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
     // href: '/menu',
   },
   {
-    img: foodImg,
+    img: foodImg2,
     title: 'Image Two',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
     // href: '/menu',
   },
   {
-    img: foodImg,
+    img: foodImg3,
     title: 'Image Three',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
     // href: '/menu',
   },
   {
-    img: foodImg,
+    img: foodImg4,
     title: 'Image Four',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
     // href: '/menu',
   },
   {
-    img: foodImg,
+    img: foodImg5,
     title: 'Image Five',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
     // href: '/menu',
   },
   {
-    img: foodImg,
+    img: foodImg6,
     title: 'Image Six',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
     // href: '/menu',
