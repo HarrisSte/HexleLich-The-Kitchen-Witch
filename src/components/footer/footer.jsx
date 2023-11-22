@@ -23,43 +23,13 @@ function Footer() {
           onMouseLeave={() => setHoveredIcon(null)}
         >
           <a
-            className='bi bi-envelope'
+            className='bi bi-github'
             href=''
             target='_blank'
             rel='noopener noreferrer'
           ></a>
         </Col>
-        <Col
-          xs='auto'
-          className={`text-center ${
-            hoveredIcon === 'instagram' ? 'hovered' : ''
-          }`}
-          onMouseEnter={() => handleIconHover('instagram')}
-          onMouseLeave={() => setHoveredIcon(null)}
-        >
-          <a
-            className='bi bi-instagram'
-            href=''
-            target='_blank'
-            rel='noopener noreferrer'
-          ></a>
-        </Col>
-        <Col
-          xs='auto'
-          className={`text-center ${
-            hoveredIcon === 'facebook' ? 'hovered' : ''
-          }`}
-          onMouseEnter={() => handleIconHover('facebook')}
-          onMouseLeave={() => setHoveredIcon(null)}
-        >
-          <a
-            className='bi bi-facebook'
-            href=''
-            target='_blank'
-            rel='noopener noreferrer'
-          ></a>
-        </Col>
-        <div className='copyright'>&copy; Stephanie Harris 2023</div>
+        <div className='copyright'>&copy; S.Harris | 2023</div>
       </Row>
     </footer>
   );
