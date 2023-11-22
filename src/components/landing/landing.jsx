@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Gallery from '../gallery/gallery';
+import Socials from '../socials/socials';
 
 import './landing.css';
 
@@ -39,42 +40,8 @@ function Landing() {
         </Col>
       </Row>
       <Row>
-        <Col id='recipes'>
-          <h2>Lorem ipsum dolor sit amet</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            assumenda temporibus non eum animi in, molestiae ab quo rem quasi
-            nobis quos expedita voluptatum aliquam velit eos accusantium fugiat
-            obcaecati esse ducimus ullam aliquid. Porro illum similique
-            accusamus eveniet aliquid. Dolor eligendi voluptate iusto ratione
-            earum eius repudiandae autem quis.
-          </p>
-        </Col>
-      </Row>
-      <Row>
-        <Col id='recipes'>
-          <h2>Lorem ipsum dolor sit amet</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            assumenda temporibus non eum animi in, molestiae ab quo rem quasi
-            nobis quos expedita voluptatum aliquam velit eos accusantium fugiat
-            obcaecati esse ducimus ullam aliquid. Porro illum similique
-            accusamus eveniet aliquid. Dolor eligendi voluptate iusto ratione
-            earum eius repudiandae autem quis.
-          </p>
-        </Col>
-      </Row>
-      <Row>
-        <Col id='recipes'>
-          <h2>Lorem ipsum dolor sit amet</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            assumenda temporibus non eum animi in, molestiae ab quo rem quasi
-            nobis quos expedita voluptatum aliquam velit eos accusantium fugiat
-            obcaecati esse ducimus ullam aliquid. Porro illum similique
-            accusamus eveniet aliquid. Dolor eligendi voluptate iusto ratione
-            earum eius repudiandae autem quis.
-          </p>
+        <Col>
+          <Socials />
         </Col>
       </Row>
     </Container>
