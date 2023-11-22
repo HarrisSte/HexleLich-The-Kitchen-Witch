@@ -116,11 +116,12 @@ h1 {
   color: white;
 }
 
-#recipes {
-  text-align: left;
+#gallery {
+  /* text-align: left; */
   margin-bottom: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #1d3557;
-  color: white;
+  /* color: white; */
+  
 }

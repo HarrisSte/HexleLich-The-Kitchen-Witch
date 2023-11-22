@@ -1,6 +1,6 @@
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Landing from './components/landing/landing';
 import About from './components/about/about';
 import Recipes from './components/recipes/recipes';
+import Gallery from './components/gallery/gallery';
 import Contact from './components/contact/contact';
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/gallery',
+        element: <Gallery />,
       },
       {
         path: '',
