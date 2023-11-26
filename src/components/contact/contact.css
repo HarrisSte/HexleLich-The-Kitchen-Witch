@@ -1,3 +1,15 @@
+.oops-msg img {
+  margin-top: 22px;
+  border-radius: 26px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* body {
     display: flex;
     flex-direction: column;
@@ -6,7 +18,7 @@
     background-position: bottom;
     background-image: url('../../assets/oops404.png');
 } */
-
+/* 
 .contact-subtitle {
     margin-top: 5rem;
     border-radius: 55% 36% 35% 56% / 28% 24% 28% 45%;
@@ -79,4 +91,4 @@ textarea::placeholder {
     color: #1B4D3E;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
-}
+} */

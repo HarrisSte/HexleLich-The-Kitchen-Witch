@@ -1,4 +1,17 @@
-img {
+.oops-msg img {
+  margin-top: 22px;
+  border-radius: 26px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* img {
     height: 200%;
 }
 
@@ -34,4 +47,4 @@ img {
     .about-info {
         margin: .5rem;
     }
-}
+} */

@@ -1,7 +1,18 @@
-import Image from 'react-bootstrap/Image';
+import { Container, Row, Col } from 'react-bootstrap';
+import oopsMsg from '../../assets/oops404.jpg';
 
-function FluidExample() {
-  return <Image src='../../assets/oops404.jpg' fluid />;
+import './contact.css';
+
+function Contact() {
+  return (
+    <Container>
+      <Row className='oops-msg'>
+        <Col>
+          <img src={oopsMsg}></img>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
-export default FluidExample;
+export default Contact;
