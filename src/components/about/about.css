@@ -1,3 +1,7 @@
+img {
+    height: 200%;
+}
+
 .about-info {
     background-color: #f8f5f2;
     border-image: linear-gradient(to right, #eacbd2, #dfaeb4, #dd9ac2, #b486ab, #82667f) 1;

@@ -24,6 +24,7 @@
 
 .hover-content {
   position: relative;
+
   z-index: 99;
 }
 
@@ -37,6 +38,7 @@
 
 .hover-1-content {
   position: absolute;
+  font-family: 'Delius', cursive;
   bottom: 0;
   left: 0;
   z-index: 99;
@@ -51,6 +53,7 @@
   transform: translateY(0.5rem);
   transition: all 0.4s;
   opacity: 0;
+  font-family: 'Delius', cursive;
 }
 
 .hover-1:hover .hover-1-content {
