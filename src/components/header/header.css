@@ -83,7 +83,6 @@
     background-color: currentcolor;
     transform: scalex(0);
     position: absolute;
-    bottom: -2px;
     left: 0;
 }
 
