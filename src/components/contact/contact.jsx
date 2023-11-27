@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
+
 import './contact.css';
 
 const Contact = () => {
@@ -15,9 +16,9 @@ const Contact = () => {
 
   const submit = () => {
     if (name && email && message) {
-      const serviceId = '';
-      const templateId = '';
-      const userId = '';
+      const serviceId = 'service_sbh5mln';
+      const templateId = 'template_20ys677';
+      const userId = 'q7cA_ga5eGF1FNubN';
       const templateParams = {
         name,
         email,
@@ -45,10 +46,12 @@ const Contact = () => {
     <Container>
       <Row className='contact-pg'>
         <Col className='contact-socials' sm={4}>
-          <h2>Questions? Suggestions? <br></br>Send them over!</h2>
+          <h2>
+            Questions? Suggestions? <br></br>Send them over!
+          </h2>
           <h5>
-            Message me directly or find me on my social media
-            accounts! <br></br>
+            Message me directly or find me on my social media accounts!{' '}
+            <br></br>
             <br></br>
             I'll be sure to get back to you as soon as possible.
           </h5>
