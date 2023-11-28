@@ -3,13 +3,14 @@
 }
 
 .socials-container {
+  margin-top: 14px;
   align-items: center;
   margin-bottom: 10px;
   background-color: #c09b9b;
-   border-radius: 10% 89% 11% 90%/88% 12% 85% 15%;
+  border-radius: 10% 89% 11% 90%/88% 12% 85% 15%;
   display: flex;
   justify-content: center;
-  width: 85%;
+  width: 80%;
 }
 
 .socials-container a {
@@ -22,11 +23,9 @@
 }
 
 .button {
-  color: var(--line_color);
   font-size: 20px;
-  font-weight: 700;
   height: 60px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   position: relative;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -36,6 +35,7 @@
 
 .button__text {
   align-items: center;
+  font-size: 30px;
   color: #653e3e;
   display: flex;
   height: 100%;
@@ -45,55 +45,6 @@
 
 .button__text:hover {
   color: white;
-}
-
-.button::before,
-.button::after,
-.button__text::before,
-.button__text::after {
-  border-radius: 2px;
-  content: '';
-  height: 3px;
-  position: absolute;
-  transition: all 0.5s ease;
-}
-
-.button::before {
-  left: 54px;
-  top: 0;
-  width: calc(100% - 56px * 2 - 16px);
-}
-
-.button::after {
-  right: 54px;
-  top: 0;
-  width: 8px;
-}
-
-.button__text::before {
-  bottom: 0;
-  right: 54px;
-  width: calc(100% - 56px * 2 - 16px);
-}
-
-.button__text::after {
-  bottom: 0;
-  left: 54px;
-  width: 8px;
-}
-
-.button:hover {
-  letter-spacing: 6px;
-}
-
-.button:hover::before,
-.button:hover .button__text::before {
-  width: 8px;
-}
-
-.button:hover::after,
-.button:hover .button__text::after {
-  width: calc(100% - 56px * 2 - 16px);
 }
 
 .button__drow1,

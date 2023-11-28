@@ -1,4 +1,5 @@
 import { Container, Row } from 'react-bootstrap';
+import { FaYoutube, FaTwitch, FaInstagram } from 'react-icons/fa';
 import './socials.css';
 
 function Socials() {
@@ -11,7 +12,9 @@ function Socials() {
           rel='noopener noreferrer'
           className='button type--A'
         >
-          <span className='button__text'>YouTube</span>
+          <span className='button__text'>
+            <FaYoutube />YouTube
+          </span>
           <div className='button__drow1'></div>
           <div className='button__drow2'></div>
         </a>
@@ -23,7 +26,9 @@ function Socials() {
           rel='noopener noreferrer'
           className='button type--A'
         >
-          <span className='button__text'>Instagram</span>
+          <span className='button__text'>
+            <FaInstagram />Instagram
+          </span>
           <div className='button__drow1'></div>
           <div className='button__drow2'></div>
         </a>
@@ -35,7 +40,9 @@ function Socials() {
           rel='noopener noreferrer'
           className='button type--A'
         >
-          <span className='button__text'>Twitch</span>
+          <span className='button__text'>
+            <FaTwitch /> Twitch
+          </span>
           <div className='button__drow1'></div>
           <div className='button__drow2'></div>
         </a>

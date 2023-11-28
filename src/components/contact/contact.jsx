@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 
+import Socials from '../socials/socials.jsx';
 import './contact.css';
 
 const Contact = () => {
@@ -45,25 +46,14 @@ const Contact = () => {
   return (
     <Container>
       <Row className='contact-pg'>
-        <Col className='contact-socials' sm={4}>
-          <h2>
-            Questions? Suggestions? <br></br>Send them over!
-          </h2>
-          <h5>
+        <Col sm={4}>
+          <h2>Want to get in touch?</h2>
+          <p>
             Message me directly or find me on my social media accounts!{' '}
             <br></br>
             <br></br>
-            I'll be sure to get back to you as soon as possible.
-          </h5>
-          <a href=''>
-            <i className='bi bi-youtube'></i>
-          </a>
-          <a href=''>
-            <i className='bi bi-twitch'></i>
-          </a>
-          <a href=''>
-            <i className='bi bi-twitter'></i>
-          </a>
+            Either way, I'll be sure to get back to you as soon as possible.
+          </p>
         </Col>
         <Col sm={8}>
           <div className='contact-form'>
@@ -92,13 +82,13 @@ const Contact = () => {
           </div>
         </Col>
       </Row>
+      <Socials />
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>Email Sent!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          Your email has been sent successfully. We will get back to you as soon
-          as possible.
+          Your email has been sent. We will get back to you as soon as possible.
         </Modal.Body>
         <Modal.Footer>
           <Button variant='secondary' onClick={handleCloseModal}>

@@ -1,5 +1,11 @@
+:root {
+  --contact-header: 'Nanum Myeongjo', serif;
+  --contact-para: 'Karla', sans-serif;
+  --contact-theme-dk: #3f2727;
+}
+
 .contact-pg {
-  height: 500px;
+  min-height: 500px;
   background: rgba(116, 83, 83, 0.49);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -7,22 +13,24 @@
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(116, 83, 83, 0.51);
   padding-left: 22px;
-  color: #fff;
+  color: var(--contact-theme-dk);
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.contact-socials {
+.contact-pg h2 {
   padding-top: 5rem;
-  font-family: 'Delius', sans-serif;
-}
-
-.contact-socials h2 {
+  font-family: var(--contact-header);
+  font-weight: bold;
   margin: 10px 0;
   padding-bottom: 10px;
-  color: white;
-  border-bottom: 3px double white;
+  border-bottom: 3px double var(--contact-theme-dk);
+}
+
+.contact-pg p {
+  font-family: var(--contact-para);
+  font-size: 20px;
 }
 
 .contact-socials i {
@@ -34,6 +42,7 @@
 
 .contact-socials i:hover {
   color: #5c374c;
+  font-size: 50px;
 }
 
 .contact-form {
@@ -47,25 +56,27 @@
   float: right;
   padding: 8px 12px;
   margin: 8px 0 0;
-  font-family: 'Delius', sans-serif;
+  font-family: var(--contact-para);
   font-size: 18px;
-  border: 2px solid #78788c;
+  border: 2px solid var(--contact-theme-dk);
   background: 0;
-  color: #5a5a6e;
+  color: var(--contact-theme-dk);
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .contact-submit:hover {
-  background: #78788c;
+  background: var(--contact-theme-dk);
   color: #fff;
   font-size: 20px;
 }
 
 input::placeholder {
   color: black;
-  font-family: 'Delius', sans-serif;
-  font-size: 18px;
+  font-family: var(--contact-para);
+  font-size: 20px;
+  opacity: 1;
+  transition: color 1.5s ease, opacity 0.5s ease;
 }
 
 input,
@@ -78,29 +89,57 @@ textarea {
   outline: none;
   resize: none;
   border: 0;
-  font-family: 'Delius', sans-serif;
+  font-family: var(--contact-para);
   transition: all 0.3s;
-  border-bottom: 3px solid #bebed2;
+  border-bottom: 3px solid #b18181b7;
 }
 
 input:focus {
-  border-bottom: 2px solid #743837;
+  border-bottom: 2px solid var(--contact-theme-dk);
 }
 
 textarea:focus {
-  border-bottom: 2px solid #743837;
+  border-bottom: 2px solid var(--contact-theme-dk);
 }
 
 textarea::placeholder {
   color: black;
-  font-family: 'Delius', sans-serif;
-  font-size: 18px;
+  font-family: var(--contact-para);
+  font-size: 20px;
+  opacity: 1;
+  transition: color 1.5s ease, opacity 0.5s ease;
 }
 
 input:focus::placeholder {
   color: transparent;
+  opacity: 0;
 }
 
 textarea:focus::placeholder {
   color: transparent;
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-pg {
+    padding: 1rem;
+  }
+
+  .contact-pg h2 {
+    padding-top: 3rem;
+  }
+
+  .contact-socials i {
+    font-size: 36px;
+  }
+
+  .contact-form {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-pg {
+    min-height: auto;
+  }
 }
