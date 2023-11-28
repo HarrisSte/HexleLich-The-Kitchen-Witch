@@ -18,8 +18,8 @@
 
 .active {
   font-weight: 900;
-  background-color: #D0B4B4;
-  border-radius: 3rem;
+  background-color: #d0b4b4;
+  border-radius: 10% 89% 11% 90%/88% 12% 85% 15%;
 }
 
 .logo {
