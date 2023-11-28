@@ -47,6 +47,43 @@ const foodPics = [
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
     // href: '/menu',
   },
+  {
+    img: foodImg6,
+    title: 'Image Six',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
+    // href: '/menu',
+  },
+  {
+    img: foodImg6,
+    title: 'Image Six',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
+    // href: '/menu',
+  },
+  {
+    img: foodImg6,
+    title: 'Image Six',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
+    // href: '/menu',
+  },
+  {
+    img: foodImg6,
+    title: 'Image Six',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
+    // href: '/menu',
+  },
+  {
+    img: foodImg6,
+    title: 'Image Six',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
+    // href: '/menu',
+  },
+
+  {
+    img: foodImg6,
+    title: 'Image Six',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
+    // href: '/menu',
+  },
 ];
 
 function Recipes() {
@@ -59,8 +96,8 @@ function Recipes() {
               <img src={foodPic.img} alt={foodPic.description} />
               <div className='hover-overlay'></div>
               <div className='hover-1-content px-5 py-4'>
-                <h3 className='hover-1-title text-uppercase font-weight-bold mb-0'>
-                  <span className='font-weight-light'>{foodPic.title}</span>
+                <h3 className=''>
+                  <span className=''>{foodPic.title}</span>
                 </h3>
                 <p className='hover-1-description font-weight-light mb-0'>
                   {foodPic.description}
