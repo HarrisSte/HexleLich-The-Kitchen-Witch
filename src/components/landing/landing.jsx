@@ -23,7 +23,9 @@ function Landing() {
       </Row>
       <Row>
         <Col id='welcome-msg'>
-          <h2>Here, recipes are guidelines & you make the rules.</h2>
+          <h2>
+            HERE, RECIPES ARE GUIDELINES <br></br>& YOU MAKE THE RULES
+          </h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
             assumenda temporibus non eum animi in, molestiae ab quo rem quasi

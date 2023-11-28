@@ -1,245 +1,277 @@
+:root {
+  --font: 'Karla', sans-serif;
+}
+
 .socials-container {
-min-height:250px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-background-color:#1d3557;
-border-radius:1rem;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #c09b9b;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 85%;
 }
 
 .socials-container a {
-    text-decoration: none;
-    font-family: 'Delius', cursive;
+  font-family: --var(font);
+  text-decoration: none;
 }
 
 .type--A {
---back_color:#607592
+  --back_color: #3f2727;
 }
 
 .button {
-position:relative;
-z-index:0;
-width:240px;
-height:60px;
-text-decoration:none;
-font-size:20px;
-font-weight:700;
-color:var(--line_color);
-letter-spacing:2px;
-transition:all .3s ease;
+  color: var(--line_color);
+  font-size: 20px;
+  font-weight: 700;
+  height: 60px;
+  letter-spacing: 2px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 240px;
+  z-index: 0;
 }
 
 .button__text {
-display:flex;
-color:#fff;
-justify-content:center;
-align-items:center;
-width:100%;
-height:100%;
+  align-items: center;
+  color: #653e3e;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 }
 
-.button::before,.button::after,.button__text::before,.button__text::after {
-content:'';
-position:absolute;
-height:3px;
-border-radius:2px;
-transition:all .5s ease
+.button__text:hover {
+  color: white;
+}
+
+.button::before,
+.button::after,
+.button__text::before,
+.button__text::after {
+  border-radius: 2px;
+  content: '';
+  height: 3px;
+  position: absolute;
+  transition: all 0.5s ease;
 }
 
 .button::before {
-top:0;
-left:54px;
-width:calc(100% - 56px * 2 - 16px)
+  left: 54px;
+  top: 0;
+  width: calc(100% - 56px * 2 - 16px);
 }
 
 .button::after {
-top:0;
-right:54px;
-width:8px
+  right: 54px;
+  top: 0;
+  width: 8px;
 }
 
 .button__text::before {
-bottom:0;
-right:54px;
-width:calc(100% - 56px * 2 - 16px)
+  bottom: 0;
+  right: 54px;
+  width: calc(100% - 56px * 2 - 16px);
 }
 
 .button__text::after {
-bottom:0;
-left:54px;
-width:8px
+  bottom: 0;
+  left: 54px;
+  width: 8px;
 }
 
 .button:hover {
-letter-spacing:6px
+  letter-spacing: 6px;
 }
 
-.button:hover::before,.button:hover .button__text::before {
-width:8px
+.button:hover::before,
+.button:hover .button__text::before {
+  width: 8px;
 }
 
-.button:hover::after,.button:hover .button__text::after {
-width:calc(100% - 56px * 2 - 16px)
+.button:hover::after,
+.button:hover .button__text::after {
+  width: calc(100% - 56px * 2 - 16px);
 }
 
-.button__drow1,.button__drow2 {
-position:absolute;
-z-index:-1;
-border-radius:16px;
-transform-origin:16px 16px
+.button__drow1,
+.button__drow2 {
+  border-radius: 16px;
+  position: absolute;
+  transform-origin: 16px 16px;
+  z-index: -1;
 }
 
 .button__drow1 {
-top:-16px;
-left:40px;
-width:32px;
-height:0;
-transform:rotate(30deg)
+  height: 0;
+  left: 40px;
+  top: -16px;
+  transform: rotate(30deg);
+  width: 32px;
 }
 
 .button__drow2 {
-top:44px;
-left:77px;
-width:32px;
-height:0;
-transform:rotate(-127deg)
+  height: 0;
+  left: 77px;
+  top: 44px;
+  transform: rotate(-127deg);
+  width: 32px;
 }
 
-.button__drow1::before,.button__drow1::after,.button__drow2::before,.button__drow2::after {
-content:'';
-position:absolute
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2::before,
+.button__drow2::after {
+  content: '';
+  position: absolute;
 }
 
 .button__drow1::before {
-bottom:0;
-left:0;
-width:0;
-height:32px;
-border-radius:16px;
-transform-origin:16px 16px;
-transform:rotate(-60deg)
+  border-radius: 16px;
+  bottom: 0;
+  height: 32px;
+  left: 0;
+  transform: rotate(-60deg);
+  transform-origin: 16px 16px;
+  width: 0;
 }
 
 .button__drow1::after {
-top:-10px;
-left:45px;
-width:0;
-height:32px;
-border-radius:16px;
-transform-origin:16px 16px;
-transform:rotate(69deg)
+  border-radius: 16px;
+  height: 32px;
+  left: 45px;
+  top: -10px;
+  transform: rotate(69deg);
+  transform-origin: 16px 16px;
+  width: 0;
 }
 
 .button__drow2::before {
-bottom:0;
-left:0;
-width:0;
-height:32px;
-border-radius:16px;
-transform-origin:16px 16px;
-transform:rotate(-146deg)
+  border-radius: 16px;
+  bottom: 0;
+  height: 32px;
+  left: 0;
+  transform: rotate(-146deg);
+  transform-origin: 16px 16px;
+  width: 0;
 }
 
 .button__drow2::after {
-bottom:26px;
-left:-40px;
-width:0;
-height:32px;
-border-radius:16px;
-transform-origin:16px 16px;
-transform:rotate(-262deg)
+  border-radius: 16px;
+  bottom: 26px;
+  height: 32px;
+  left: -40px;
+  transform: rotate(-262deg);
+  transform-origin: 16px 16px;
+  width: 0;
 }
 
-.button__drow1,.button__drow1::before,.button__drow1::after,.button__drow2,.button__drow2::before,.button__drow2::after {
-background:var(--back_color)
+.button__drow1,
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2,
+.button__drow2::before,
+.button__drow2::after {
+  background: var(--back_color);
 }
 
 .button:hover .button__drow1 {
-animation:drow1 ease-in .06s;
-animation-fill-mode:forwards
+  animation: drow1 ease-in 0.06s;
+  animation-fill-mode: forwards;
 }
 
 .button:hover .button__drow1::before {
-animation:drow2 linear .08s .06s;
-animation-fill-mode:forwards
+  animation: drow2 linear 0.08s 0.06s;
+  animation-fill-mode: forwards;
 }
 
 .button:hover .button__drow1::after {
-animation:drow3 linear .03s .14s;
-animation-fill-mode:forwards
+  animation: drow3 linear 0.03s 0.14s;
+  animation-fill-mode: forwards;
 }
 
 .button:hover .button__drow2 {
-animation:drow4 linear .06s .2s;
-animation-fill-mode:forwards
+  animation: drow4 linear 0.06s 0.2s;
+  animation-fill-mode: forwards;
 }
 
 .button:hover .button__drow2::before {
-animation:drow3 linear .03s .26s;
-animation-fill-mode:forwards
+  animation: drow3 linear 0.03s 0.26s;
+  animation-fill-mode: forwards;
 }
 
 .button:hover .button__drow2::after {
-animation:drow5 linear .06s .32s;
-animation-fill-mode:forwards
+  animation: drow5 linear 0.06s 0.32s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes drow1 {
-0% {
-height:0
-}
+  0% {
+    height: 0;
+  }
 
-100% {
-height:100px
-}
+  100% {
+    height: 100px;
+  }
 }
 
 @keyframes drow2 {
-0% {
-width:0;
-opacity:0
-}
+  0% {
+    opacity: 0;
+    width: 0;
+  }
 
-10% {
-opacity:0
-}
+  10% {
+    opacity: 0;
+  }
 
-11% {
-opacity:1
-}
+  11% {
+    opacity: 1;
+  }
 
-100% {
-width:120px
-}
+  100% {
+    width: 120px;
+  }
 }
 
 @keyframes drow3 {
-0% {
-width:0
-}
+  0% {
+    width: 0;
+  }
 
-100% {
-width:80px
-}
+  100% {
+    width: 80px;
+  }
 }
 
 @keyframes drow4 {
-0% {
-height:0
-}
+  0% {
+    height: 0;
+  }
 
-100% {
-height:120px
-}
+  100% {
+    height: 120px;
+  }
 }
 
 @keyframes drow5 {
-0% {
-width:0
-}
+  0% {
+    width: 0;
+  }
 
-100% {
-width:124px
+  100% {
+    width: 124px;
+  }
 }
+@media (max-width: 768px) {
+  .socials-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .socials-container a {
+    margin-bottom: 10px;
+  }
 }
