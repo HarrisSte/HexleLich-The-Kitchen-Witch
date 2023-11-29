@@ -18,7 +18,8 @@
   transition: all 0.4s;
 }
 
-.hover img {
+.hover img,
+.hover-1 img {
   width: 100%;
   position: absolute;
   top: 0;
@@ -26,7 +27,8 @@
   transition: all 0.3s;
 }
 
-.hover-content {
+.hover-content,
+.hover-1-content {
   position: relative;
   z-index: 99;
 }
@@ -42,7 +44,6 @@
 .hover-1-content {
   position: absolute;
   font-family: var(--gallery-font);
-
   bottom: 0;
   left: 0;
   z-index: 99;
@@ -82,4 +83,25 @@
 
 .hover-1:hover .hover-overlay {
   opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hover img,
+  .hover-1 img {
+    width: 100%;
+    left: 0;
+  }
+
+  .hover-1-content {
+    top: 0.5rem;
+  }
+
+  .hover-1-content h3 {
+    font-size: 1rem;
+  }
+
+  .hover-1-description {
+    font-size: 12px;
+    width: 100%;
+  }
 }
