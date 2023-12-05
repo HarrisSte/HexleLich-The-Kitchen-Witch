@@ -1,4 +1,3 @@
-// import Image from 'react-bootstrap/Image';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import foodImg1 from '../../assets/foodImg1.jpg';
@@ -91,7 +90,7 @@ function Recipes() {
     <Container>
       <Row>
         {foodPics.map((foodPic, index) => (
-          <Col key={index} sm={4} className='mb-3 mb-lg-0'>
+          <Col key={index} sm={4} className='recipe-container mb-3 mb-lg-0'>
             <div className='hover hover-1 text-white rounded mb-3'>
               <img src={foodPic.img} alt={foodPic.description} />
               <div className='hover-overlay'></div>
